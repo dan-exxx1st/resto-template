@@ -1,0 +1,67 @@
+.dots {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: $dots-bg;
+	cursor: pointer;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&.active {
+		background: $active-dots-bg;
+	}
+}
+
+.featured-dishes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: $grid-margin;
+	max-width: $grid-max-widht;
+	width: 100%;
+
+	&__top {
+		margin-top: 100px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		&__title {
+			color: $color-primary;
+			text-transform: uppercase;
+		}
+
+		&__dots {
+			display: flex;
+		}
+	}
+
+	&__cards {
+		display: flex;
+		overflow: hidden;
+
+		&__item {
+			transition: 1s all ease-in-out;
+			&:not(:last-child) {
+				margin-right: 60px;
+			}
+			&__caption {
+				display: flex;
+				justify-content: space-between;
+				margin: 30px 0;
+				color: $text-secondary-cl;
+				font-size: 16px;
+				&__text {
+					font-size: 16px;
+				}
+			}
+
+			&__raiting {
+				display: flex;
+				justify-content: flex-start;
+				height: 10px;
+			}
+		}
+	}
+}
