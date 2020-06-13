@@ -3,7 +3,9 @@ export default function Slider() {
 		slides = document.querySelectorAll('.featured-dishes__cards__item'),
 		index = 0,
 		currentDot = 0,
-		interval;
+		interval,
+		prevX = 0,
+		dragStop = false;
 
 	let startInterval = () => {
 		interval = setInterval(() => {
@@ -13,7 +15,7 @@ export default function Slider() {
 			} else {
 				currentDot++;
 			}
-		}, 2500);
+		}, 5000);
 	};
 
 	startInterval();

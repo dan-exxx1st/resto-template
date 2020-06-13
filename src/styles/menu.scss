@@ -2,8 +2,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: $grid-margin;
 	max-width: $grid-max-widht;
+	width: 100%;
 	&__mark {
 		position: relative;
 		display: flex;
@@ -29,7 +29,7 @@
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: space-between;
 
 		&__item {
 			display: flex;

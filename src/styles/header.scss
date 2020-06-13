@@ -1,17 +1,9 @@
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-}
-
 .header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-width: $grid-max-widht;
-	margin: $grid-margin;
 
 	&__logo {
 		cursor: pointer;

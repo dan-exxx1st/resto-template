@@ -1,0 +1,50 @@
+footer {
+	background: $cl-bg;
+	margin-top: 100px;
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: $grid-max-widht;
+	width: 100%;
+	height: 100px;
+	color: $color-white;
+	padding: 50px 0;
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+		font-size: 12px;
+		&:not(:last-child) {
+			margin-right: 120px;
+		}
+		& > span {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__logo {
+		margin-top: -10px;
+		height: 100%;
+		justify-content: start;
+		align-items: start;
+		align-content: start;
+
+		&__img {
+			margin-bottom: 10px;
+		}
+
+		& > span {
+			&:last-child {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.font-lighter {
+	font-weight: lighter;
+}
