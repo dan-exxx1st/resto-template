@@ -43,6 +43,16 @@ footer {
 			}
 		}
 	}
+
+	&__menu {
+		& > span {
+			transition: 0.25s all ease-in-out;
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.05);
+			}
+		}
+	}
 }
 
 .font-lighter {
