@@ -12,7 +12,9 @@
 	},
 	"scripts": {
 		"dev": "webpack-dev-server --open --config ./webpack/webpack.dev.js",
-		"build": "webpack --config ./webpack/webpack.prod.js"
+		"build": "webpack --config ./webpack/webpack.prod.js",
+		"heroku-prebuild": "npm i -g serve",
+		"web": "serve build -l ${PORT:=3000}"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.6.4",
@@ -40,5 +42,8 @@
 		"webpack-cli": "^3.3.9",
 		"webpack-dev-server": "^3.9.0",
 		"webpack-merge": "^4.2.2"
+	},
+	"dependencies": {
+		"serve": "^11.3.2"
 	}
 }
